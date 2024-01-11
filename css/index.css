@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy';
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.transition {
+    padding: 50px 0 70px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    align-items: center;
+
+}
+
+.homepage,
+.only_today {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.homepage {
+    color: #FFC700;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.only_today {
+    color: #A5A5B4;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.undone_tasks {
+    color: #000;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 900;
+    padding-bottom: 80px;
+}
+
+.todo-title {
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+.daily-task-calculating_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.counting-day {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFC700;
+    font-size: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 35px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked+.custom-checkbox {
+    background-color: #FFC700;
+    border: none;
+}
+
+label {
+    width: fit-content;
+}
+
+.custom-checkbox {
+    margin-top: 3.5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background-color: #f0f0f0;
+    border: 2px solid #999;
+    cursor: pointer;
+}
+
+.item-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    width: fit-content;
+}
+
+.item {
+    border-radius: 15px;
+    max-width: 630px;
+    background-color: #f0f0f0;
+    display: flex;
+    gap: 14px;
+    padding: 20px;
+    align-items: start;
+}
+
+.task-name {
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.paragraph {
+    color: #A5A5B4;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 12px 0 12px;
+}
+
+.today {
+    color: #FFC700;
+    font-size: 16px;
+    font-weight: 600;
+}
